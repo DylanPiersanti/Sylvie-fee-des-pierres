@@ -1,0 +1,508 @@
+@font-face {
+  font-family: "segoeuil";
+  src: url("../../fonts/segoeuil.ttf");
+}
+@font-face {
+  font-family: "Comfortaa-Bold";
+  src: url("../../fonts/Comfortaa-Bold.ttf");
+}
+@font-face {
+  font-family: "Comfortaa-Light";
+  src: url("../../fonts/Comfortaa-Light.ttf");
+}
+@font-face {
+  font-family: "Comfortaa-Regular";
+  src: url("../../fonts/Comfortaa-Regular.ttf");
+}
+body {
+  background-color: #FAFAFA;
+}
+
+.carousel {
+  height: 100vh;
+}
+.carousel .carousel-inner .w-100 {
+  height: 100vh;
+}
+
+div#carousel > .carousel-indicators {
+  bottom: 60px !important;
+}
+div#carousel > .carousel-indicators li {
+  height: 14px;
+  width: 14px;
+  border: solid #FAFAFA 3px;
+  transform: rotate(45deg);
+  background-color: transparent;
+}
+div#carousel > .carousel-indicators li:nth-child(2) {
+  margin: 0 30px;
+}
+div#carousel > .carousel-indicators li.active {
+  background-color: #FAFAFA;
+}
+
+.container-fluid.main {
+  position: relative;
+  /* To make the navbar positions relative to this container */
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.navbar {
+  background-image: none;
+  background-color: transparent !important;
+  /* Make the menu become transparent */
+  padding: 10px;
+  position: absolute;
+  /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+}
+
+.navbar-collapse {
+  width: unset;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 35px;
+}
+
+.nav-link.active, .nav-link {
+  color: #FAFAFA !important;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.nav-link.active:hover, .nav-link.active:focus, .nav-link:hover, .nav-link:focus {
+  color: #FAFAFA;
+}
+
+.coverImg {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  right: 0;
+}
+
+.coverText {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.logo {
+  z-index: 2;
+}
+
+#newsletterContainer {
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+#newsletterContainer h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  color: #2D2D2D;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+#newsletterContainer h2 {
+  font-family: "segoeuil", sans-serif;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+#newsletterContainer button#newsletter {
+  text-transform: uppercase;
+}
+
+#aboutSection {
+  margin-bottom: 40px;
+}
+#aboutSection #text h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  color: #2D2D2D;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#aboutSection #text h2 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+#aboutSection #text p {
+  font-family: "segoeuil", sans-serif;
+  text-align: center;
+  color: #2D2D2D;
+  line-height: 21px;
+  font-size: 16px;
+  margin-bottom: 44px;
+}
+#aboutSection #firstImg {
+  width: 384px;
+  height: 518px;
+  object-fit: cover;
+}
+#aboutSection #secondImg {
+  width: 359px;
+  height: 264px;
+  object-fit: cover;
+}
+
+#separation {
+  background-color: #2D2D2D;
+  min-height: 256px;
+  margin-bottom: 50px;
+}
+#separation h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  font-size: 27px;
+  color: #FAFAFA;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#separation p {
+  font-family: "Comfortaa-Regular", sans-serif;
+  font-size: 12px;
+  color: #FAFAFA;
+  text-transform: uppercase;
+}
+
+#gallery {
+  margin-bottom: 60px;
+}
+#gallery h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  color: #2D2D2D;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#gallery h2 {
+  font-family: "Comfortaa-Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+#gallery #images {
+  position: relative;
+}
+#gallery #images #textSign {
+  position: absolute;
+  left: 14px;
+  top: 148px;
+}
+#gallery #images #selectedImg {
+  width: 528px;
+  height: 484px;
+  object-fit: cover;
+  margin-left: 95px;
+  margin-bottom: 20px;
+}
+#gallery #images .squareNude {
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+#gallery #images h1 {
+  text-align: center;
+  font-size: 17px;
+  font-family: "Comfortaa-Bold", sans-serif;
+  color: #2D2D2D;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+#gallery #images h2 {
+  text-align: center;
+  margin-left: 70px;
+  font-size: 13px;
+  color: #2D2D2D;
+  font-family: "Comfortaa-Regular", sans-serif;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+#gallery #images #textSign {
+  width: 142px;
+  height: 400px;
+  object-fit: cover;
+}
+#gallery #images .contactme {
+  margin-left: 70px;
+}
+#gallery #imagesOnGallery {
+  max-height: 677px;
+  overflow-y: scroll;
+}
+#gallery #imagesOnGallery .imagegallery {
+  margin-bottom: 30px;
+}
+#gallery #imagesOnGallery .imagegallery .thumbnails {
+  width: 289px;
+  height: 200px;
+  object-fit: cover;
+}
+#gallery #imagesOnGallery .imagegallery .squareNude {
+  margin-bottom: 23px;
+}
+
+#stones {
+  background-color: #2D2D2D;
+  margin-bottom: 30px;
+  padding-bottom: 65px;
+}
+#stones .container {
+  padding: 0;
+}
+#stones h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #FAFAFA;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+#stones h2 {
+  font-family: "Comfortaa-Regular", sans-serif;
+  font-size: 20px;
+  color: #FAFAFA;
+  text-transform: uppercase;
+}
+#stones hr {
+  width: 100%;
+  border: solid #FAFAFA 2px;
+  margin: 0 0 28px 0;
+}
+#stones input {
+  border: none;
+  border-bottom: solid #FAFAFA 2px;
+  color: #FAFAFA;
+  background-color: transparent;
+  outline: none;
+  font-size: 13px;
+  width: 70%;
+}
+#stones input::placeholder {
+  color: #FAFAFA;
+}
+#stones .inputWBtn {
+  margin-bottom: 40px;
+}
+#stones .thumbnailInformations .thumbnailsMini {
+  width: 144px;
+  height: 144px;
+  object-fit: cover;
+}
+#stones .thumbnailInformations .thumbnailTitle {
+  font-family: "Comfortaa-Regular", sans-serif;
+  font-size: 13px;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+#stones .thumbnailInformations .thumbnailText {
+  font-family: "segoeuil", sans-serif;
+  font-size: 12px;
+  color: #FAFAFA;
+}
+#stones .dropdown {
+  width: 70%;
+}
+#stones #stonesgallery {
+  height: 465px;
+  overflow-y: scroll;
+}
+#stones #stonesgallery hr {
+  margin-bottom: 0;
+  width: 70%;
+}
+#stones #stonesgallery .btn.btn-primary.read {
+  font-size: 11px;
+  margin-right: 25px;
+}
+
+#contact {
+  background-image: url("../../images/Groupe24.svg");
+  background-repeat: no-repeat;
+  background-position-x: 245px;
+  background-position-y: 67px;
+  margin-bottom: 78px;
+}
+#contact #contactSection {
+  margin-bottom: 135px;
+}
+#contact h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+#contact h2 {
+  font-family: "Comfortaa-Regular", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#contact input {
+  width: 100%;
+  margin-bottom: 40px;
+  background: transparent;
+}
+#contact .formcontactitlte h1 {
+  font-size: 17px;
+  font-family: "Comfortaa-Bold", sans-serif;
+  color: #2D2D2D;
+}
+#contact .formcontactitlte h2 {
+  font-size: 17px;
+  font-family: "segoeuil", sans-serif;
+  text-align: center;
+  color: #707070;
+  width: 50%;
+}
+#contact .contactI {
+  font-family: "segoeuil", sans-serif;
+  font-size: 13px;
+  color: #707070;
+}
+#contact #infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact #infos h3 {
+  margin-bottom: 10px;
+  color: #2D2D2D;
+  font-size: 20px;
+  font-family: "Comfortaa-Bold", sans-serif;
+}
+#contact #infos .i {
+  margin-bottom: 35px;
+  color: #2D2D2D;
+  font-size: 20px;
+  font-family: "Comfortaa-Regular", sans-serif;
+}
+
+#footer {
+  background-color: #2D2D2D;
+  padding: 15px 0;
+}
+#footer p {
+  color: #FAFAFA;
+  margin-bottom: 0;
+}
+#footer #medias img {
+  margin-right: 15px;
+}
+
+form input {
+  border: none;
+  border-bottom: solid #CFA990 2px;
+  font-size: 10px;
+  color: #9F9F9F;
+  width: 24%;
+  background-color: #FAFAFA;
+}
+form input:focus {
+  outline: none;
+}
+
+.textarea {
+  border: solid #CFA990 1px;
+  margin-bottom: 30px;
+}
+
+.btn.btn-primary {
+  background-color: #CFA990;
+  border: solid transparent 2px;
+  text-transform: uppercase;
+}
+.btn.btn-primary:hover {
+  background-color: #FAFAFA;
+  color: #CFA990;
+  border: solid #CFA990 2px;
+}
+.btn.btn-primary:focus, .btn.btn-primary:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn.btn-secondary {
+  background-color: #FAFAFA;
+  color: #CFA990;
+  border: solid #CFA990 2px;
+}
+.btn.btn-secondary.contactme {
+  width: 220px;
+  height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Comfortaa-Bold", sans-serif;
+}
+.btn.btn-secondary.contactme:hover {
+  background-color: #CFA990;
+  color: #FAFAFA;
+}
+.btn.btn-secondary.contactme:focus, .btn.btn-secondary.contactme:active {
+  outline: none !important;
+  box-shadow: none;
+}
+.btn.btn-secondary#backToHome {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Comfortaa-Bold", sans-serif;
+  padding: 20px 45px;
+}
+
+.dropdown button.btn.btn-secondary {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid #FAFAFA 2px;
+  border-radius: 0;
+  color: #FAFAFA;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  font-size: 13px;
+  margin-left: 0;
+  padding-left: 5px;
+}
+.dropdown button.btn.btn-secondary:focus, .dropdown button.btn.btn-secondary:active {
+  outline: none !important;
+  box-shadow: none;
+}
+.dropdown ul.dropdown-menu {
+  width: 100%;
+}
+
+.squareNude {
+  border: solid #CFA990 2px;
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+}
+
+body::-webkit-scrollbar, ::-webkit-scrollbar {
+  width: 17px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track, ::-webkit-scrollbar-track {
+  background: #EEEEEE;
+  /* color of the tracking area */
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+  background-color: #CFA990;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #EEEEEE;
+  /* creates padding around scroll thumb */
+}
+
+/*# sourceMappingURL=app.css.map */
