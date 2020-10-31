@@ -71,12 +71,15 @@ div#carousel > .carousel-indicators li.active {
   margin-right: 35px;
 }
 
-.nav-link.active, .nav-link {
+.nav-link.active,
+.nav-link {
   color: #FAFAFA !important;
   text-transform: uppercase;
   font-size: 14px;
 }
-.nav-link.active:hover, .nav-link.active:focus, .nav-link:hover, .nav-link:focus {
+.nav-link.active:hover, .nav-link.active:focus,
+.nav-link:hover,
+.nav-link:focus {
   color: #FAFAFA;
 }
 
@@ -290,6 +293,9 @@ div#carousel > .carousel-indicators li.active {
 #stones .inputWBtn {
   margin-bottom: 40px;
 }
+#stones .thumbnailInformations .stoneBlc {
+  margin-bottom: 30px;
+}
 #stones .thumbnailInformations .thumbnailsMini {
   width: 144px;
   height: 144px;
@@ -402,7 +408,7 @@ form input {
   border: none;
   border-bottom: solid #CFA990 2px;
   font-size: 10px;
-  color: #9F9F9F;
+  color: #9f9f9f;
   width: 24%;
   background-color: #FAFAFA;
 }
@@ -485,24 +491,258 @@ form input:focus {
   height: 15px;
 }
 
-body::-webkit-scrollbar, ::-webkit-scrollbar {
+body::-webkit-scrollbar,
+::-webkit-scrollbar {
   width: 17px;
   /* width of the entire scrollbar */
 }
 
-body::-webkit-scrollbar-track, ::-webkit-scrollbar-track {
-  background: #EEEEEE;
+body::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+  background: #eeeeee;
   /* color of the tracking area */
   border-radius: 20px;
 }
 
-body::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
   background-color: #CFA990;
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
-  border: 3px solid #EEEEEE;
+  border: 3px solid #eeeeee;
   /* creates padding around scroll thumb */
+}
+
+@media (max-width: 990px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  #newsletterContainer {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #newsletterContainer .container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column !important;
+  }
+  #newsletterContainer .container form input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  #newsletterContainer .container form button {
+    margin-top: 30px;
+  }
+
+  #aboutSection {
+    text-align: center;
+  }
+  #aboutSection #firstImg {
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  #aboutSection .contactme {
+    margin-bottom: 30px;
+  }
+
+  #contact {
+    text-align: center;
+  }
+  #contact #infos {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1400px) {
+  #gallery {
+    text-align: center;
+  }
+  #gallery #textSign {
+    display: none;
+  }
+  #gallery .squareNude,
+#gallery h1,
+#gallery h2,
+#gallery a {
+    margin-left: inherit !important;
+  }
+  #gallery .contactme {
+    margin-bottom: 30px;
+  }
+  #gallery #imagesOnGallery {
+    padding-top: 25px;
+  }
+  #gallery #imagesOnGallery .imagegallery {
+    flex-direction: column !important;
+  }
+  #gallery #imagesOnGallery .imagegallery .thumbnails {
+    width: 200px !important;
+    height: 200px !important;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 1200px) {
+  #gallery {
+    text-align: center;
+  }
+  #gallery #textSign {
+    display: none;
+  }
+  #gallery .squareNude,
+#gallery h1,
+#gallery h2,
+#gallery a {
+    margin-left: inherit !important;
+  }
+  #gallery .contactme {
+    margin-bottom: 30px;
+  }
+  #gallery #imagesOnGallery {
+    padding-top: 25px;
+  }
+  #gallery #imagesOnGallery .imagegallery {
+    flex-direction: column !important;
+  }
+  #gallery #imagesOnGallery .imagegallery .thumbnails {
+    width: 200px !important;
+    height: 200px !important;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 920px) {
+  .little_logo {
+    width: 50px !important;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  #carousel,
+.main {
+    width: 100vw;
+  }
+
+  .logo {
+    width: 50vw;
+  }
+
+  #newsletterContainer {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #newsletterContainer .container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column !important;
+  }
+  #newsletterContainer .container form input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  #newsletterContainer .container form button {
+    margin-top: 30px;
+  }
+
+  #aboutSection {
+    text-align: center;
+  }
+  #aboutSection #firstImg {
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  #aboutSection .contactme {
+    margin-bottom: 30px;
+  }
+
+  #separation {
+    padding: 30px 0px;
+  }
+  #separation .container {
+    flex-direction: column !important;
+  }
+  #separation .container .squareNude {
+    margin: 30px 0 30px 0;
+  }
+
+  #gallery {
+    text-align: center;
+  }
+  #gallery #textSign {
+    display: none;
+  }
+  #gallery #selectedImg {
+    width: 250px !important;
+    height: 250px !important;
+    margin-left: inherit !important;
+  }
+  #gallery .squareNude,
+#gallery h1,
+#gallery h2,
+#gallery a {
+    margin-left: inherit !important;
+  }
+  #gallery .contactme {
+    margin-bottom: 30px;
+  }
+  #gallery #imagesOnGallery {
+    padding-top: 25px;
+  }
+  #gallery #imagesOnGallery .imagegallery {
+    flex-direction: column !important;
+  }
+  #gallery #imagesOnGallery .imagegallery .thumbnails {
+    width: 200px !important;
+    height: 150px !important;
+    margin-bottom: 16px;
+  }
+
+  #stones {
+    text-align: center;
+  }
+  #stones .thumbnailInformations {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px !important;
+  }
+  #stones .thumbnailInformations div {
+    margin-top: 16px;
+    margin-left: inherit !important;
+  }
+  #stones #stonesgallery .thumbnailInformations {
+    align-items: center !important;
+  }
+  #stones #stonesgallery .thumbnailInformations .stoneBlc {
+    flex-direction: column !important;
+    margin-left: inherit !important;
+    align-items: center;
+  }
+  #stones #stonesgallery .thumbnailInformations .seeMore {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  #contact {
+    text-align: center;
+  }
+  #contact #infos {
+    margin-top: 30px;
+  }
+
+  #footer .container {
+    text-align: center;
+  }
+  #footer .container p {
+    margin-top: 16px;
+  }
+  #footer .container .socialN {
+    margin-top: 16px;
+    display: flex !important;
+    justify-content: center !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
